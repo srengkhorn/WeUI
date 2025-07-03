@@ -1,40 +1,41 @@
 [versions]
-# 核心库
-agp = "8.7.0"
-datastore = "1.1.1"
-kotlin = "2.0.0"
-compose-bom = "2024.09.03"
+# Core Library
+agp = "8.7.3"
+kotlin = "2.2.0"
+datastore = "1.1.7"
+compose-bom = "2025.06.01"
 compose-compiler = "1.5.15"
-core-ktx = "1.13.1"
-lifecycle-runtime-ktx = "2.8.6"
-activity-compose = "1.9.2"
+core-ktx = "1.16.0"
+lifecycle-runtime-ktx = "2.9.1"
+activity-compose = "1.10.1"
 
-# 官方库
-accompanist-permissions = "0.34.0"
+# Official Library
+accompanist-permissions = "0.37.3"
 biometric = "1.2.0-alpha05"
-camerax = "1.3.4"
-coil-compose = "2.6.0"
-material-icons-extended = "1.7.3"
-navigation-compose = "2.8.2"
-room = "2.6.1"
-ksp = "2.0.0-1.0.21"
-android-tools = "31.7.0"
-room-gradle-plugin = "2.6.1"
-# 测试相关
+camerax = "1.4.2"
+coil-compose = "2.7.0"
+material-icons-extended = "1.7.8"
+navigation-compose = "2.9.1"
+room = "2.7.2"
+ksp = "2.1.21-2.0.1"
+android-tools = "31.11.0"
+room-gradle-plugin = "2.7.2"
+
+# Test related
 junit = "4.13.2"
 androidx-test-ext-junit = "1.2.1"
 espresso-core = "3.6.1"
 
-# 三方库
-lunar = "1.6.3"
+# Third-party library
+lunar = "1.7.4"
 pinyin = "0.4.0"
 reorderable = "0.9.6"
-retrofit = "2.11.0"
+retrofit = "3.0.0"
 mlkit = "17.3.0"
 zxing-core = "3.5.3"
 
 [libraries]
-# 核心库
+# Core Library
 core-ktx = { module = "androidx.core:core-ktx", version.ref = "core-ktx" } # 支持kotlin
 lifecycle-runtime-ktx = { module = "androidx.lifecycle:lifecycle-runtime-ktx", version.ref = "lifecycle-runtime-ktx" } # 组件支持生命周期管理
 activity-compose = { module = "androidx.activity:activity-compose", version.ref = "activity-compose" } # 支持在activity中嵌入compose组件
@@ -42,7 +43,7 @@ ui = { module = "androidx.compose.ui:ui" }
 ui-graphics = { module = "androidx.compose.ui:ui-graphics" }
 compose-bom = { module = "androidx.compose:compose-bom", version.ref = "compose-bom" } # 统一管理compose相关依赖版本
 
-# 官方库
+# Official Library
 material3 = { module = "androidx.compose.material3:material3" } # material3风格的官方组件库及主题
 material-icons-extended = { module = "androidx.compose.material:material-icons-extended", version.ref = "material-icons-extended" } # icon扩展库
 lifecycle-viewmodel-compose = { module = "androidx.lifecycle:lifecycle-viewmodel-compose", version.ref = "lifecycle-runtime-ktx" } # 支持viewmodel
@@ -57,17 +58,19 @@ room-ktx = { module = "androidx.room:room-ktx", version.ref = "room" } # room支
 room-compiler = { module = "androidx.room:room-compiler", version.ref = "room" } # room支持根据注解自动生成对应实现
 datastore-core = { module = "androidx.datastore:datastore-core", version.ref = "datastore" }
 datastore-preferences = { module = "androidx.datastore:datastore-preferences", version.ref = "datastore" }
-# 调试相关
+
+# Debug related
 ui-tooling = { module = "androidx.compose.ui:ui-tooling" }
 ui-tooling-preview = { module = "androidx.compose.ui:ui-tooling-preview" } # 支持compose组件预览
-# 测试相关
+
+# Test related
 junit = { module = "junit:junit", version.ref = "junit" }
 ui-test-junit4 = { module = "androidx.compose.ui:ui-test-junit4" }
 ui-test-manifest = { module = "androidx.compose.ui:ui-test-manifest" }
 espresso-core = { module = "androidx.test.espresso:espresso-core", version.ref = "espresso-core" }
 androidx-test-ext-junit = { module = "androidx.test.ext:junit", version.ref = "androidx-test-ext-junit" }
 
-# 三方库
+# Third-party library
 lunar = { module = "cn.6tail:lunar", version.ref = "lunar" } # 计算农历日期与节日
 coil-compose = { module = "io.coil-kt:coil-compose", version.ref = "coil-compose" } # 支持异步加载图片
 pinyin = { module = "com.github.houbb:pinyin", version.ref = "pinyin" } # 汉字转拼音

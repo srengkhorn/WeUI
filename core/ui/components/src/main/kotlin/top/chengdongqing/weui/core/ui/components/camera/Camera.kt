@@ -46,10 +46,10 @@ private fun ColumnScope.CameraPreview(state: CameraState) {
         val tips = remember {
             buildList {
                 if (state.type == VisualMediaType.IMAGE_AND_VIDEO || state.type == VisualMediaType.IMAGE) {
-                    add("轻触拍照")
+                    add("Take Photo") // Tap to take a photo
                 }
                 if (state.type == VisualMediaType.IMAGE_AND_VIDEO || state.type == VisualMediaType.VIDEO) {
-                    add("长按摄像")
+                    add("Take Video") // Long press to record
                 }
             }.joinToString("，")
         }

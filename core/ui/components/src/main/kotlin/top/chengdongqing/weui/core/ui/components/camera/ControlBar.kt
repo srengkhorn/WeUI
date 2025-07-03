@@ -49,7 +49,7 @@ internal fun ControlBar(state: CameraState) {
         ) {
             Icon(
                 imageVector = if (state.isFlashOn) Icons.Filled.FlashOn else Icons.Filled.FlashOff,
-                contentDescription = "开关闪光灯",
+                contentDescription = "Flash ON/OFF",
                 tint = Color.White
             )
         }
@@ -59,7 +59,7 @@ internal fun ControlBar(state: CameraState) {
         }) {
             Icon(
                 Icons.Filled.FlipCameraAndroid,
-                contentDescription = "切换相机",
+                contentDescription = "Switch Camera",
                 tint = Color.White
             )
         }
